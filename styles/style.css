@@ -140,6 +140,10 @@ body {
     font-weight: 400;
 }
 
+.curriculo:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 1200px){
     .cabecalho {
         padding: 10%;
