@@ -239,10 +239,6 @@ body {
         font-size: 1.3rem;
     }
 
-    .cabecalho__menu__link:hover {
-        display: none;
-    }
-
     .apresentacao__conteudo__titulo {
         font-size: 2rem;
     }
@@ -267,10 +263,6 @@ body {
 
     .cabecalho__menu__link {
         font-size: 1rem;
-    }
-
-    .cabecalho__menu__link:hover {
-        display: none;
     }
 
     main.apresentacao {
@@ -299,10 +291,6 @@ body {
 
     .cabecalho__menu__link {
         font-size: 0.7rem;
-    }
-
-    .cabecalho__menu__link:hover {
-        display: none;
     }
 
     .apresentacao__links__navegacao {
