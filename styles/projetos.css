@@ -31,7 +31,7 @@
     cursor: pointer;
 }
 
-.conteudo-lista__titulo {
+.conteudo-lista__div {
     color: var(--cor-secundaria);
     display: flex;
     justify-content: center;
@@ -72,4 +72,38 @@
 	background-color: var(--cor-primaria);
 	border-radius: 10px;
 	border: 3px solid var(--cor-primaria);
+}
+
+@media (max-width: 1345px){
+    main#projetos.apresentacao {
+        margin: 5% 10%;
+    }
+
+}
+
+@media (max-width: 1200px){
+    main#projetos.apresentacao {
+        margin: 5% 0 0 0;
+    }
+
+}
+
+
+@media (max-width: 1070px){
+    main#projetos.apresentacao {
+        margin: 0px 0px;
+    }
+
+    .conteudo-lista {
+        width: 8em;
+    }
+
+    .conteudo-lista__titulo {
+        font-size: 1.5rem;
+    }
+
+    .conteudo-lista__texto {
+        font-size: 1.2rem;
+    }
+    
 }

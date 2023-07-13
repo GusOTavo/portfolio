@@ -106,6 +106,7 @@ body {
 .apresentacao__links__navegacao {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 16px;
     width: var(--tamanho-1);
     text-align: center;
@@ -130,6 +131,10 @@ body {
     width: var(--tamanho-1);
 }
 
+.curriculo:hover {
+    text-decoration: underline;
+}
+
 .rodape {
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
@@ -140,14 +145,10 @@ body {
     font-weight: 400;
 }
 
-.curriculo:hover {
-    text-decoration: underline;
-}
-
 #botao-topo {
     display: none; 
     position: fixed; 
-    bottom: 20px; 
+    bottom: 70px; 
     right: 30px; 
     z-index: 99; 
     border: none; 
@@ -158,6 +159,7 @@ body {
     padding: 15px; 
     border-radius: 10px; 
     font-size: 18px;
+    opacity: 0.75;
     transition: 0.2s ease-in-out;
   }
   
@@ -166,9 +168,17 @@ body {
     color: var(--cor-secundaria);
 }
 
+#botao-topo:active {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-hover);
+}
+
+
+
 @media (max-width: 1200px){
     .cabecalho {
-        padding: 10%;
+        padding: 5% 0 0 0;
     }
     
     .cabecalho__menu {
@@ -184,3 +194,63 @@ body {
         width: auto;
     }
 }
+
+@media (max-width: 700px){
+    .cabecalho__menu {
+        gap: 3rem;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 1.3rem;
+    }
+
+    .cabecalho__menu__link:hover {
+        display: none;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 2rem;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 1.3rem;
+    }
+
+    .rodape {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .cabecalho {
+        padding: 10% 0 5% 0;
+    }
+
+    .cabecalho__menu {
+        gap: 1.5rem;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 1rem;
+    }
+
+    main.apresentacao {
+        gap:3em;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1.5rem;
+    }
+
+    .apresentacao__links__navegacao {
+        padding: 15px 10px;
+        font-size: 1rem;
+    }
+
+    .rodape {
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+}
+
+
